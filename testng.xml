@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!-- 配置文件路径 -->
+    <parameter name="propertiesPath" value="src/test/resources/config/config.properties"/>
+    <!--监听器-->
+    <listeners>
+        <listener class-name="com.meijiatest.listener.OverrideIAnnotationTransformer" />
+    </listeners>
+    <!-- 测试套件 -->
+    <suite-files>
+        <!-- 测试套件 -->
+                <suite-file path="parameters_test.xml"/>
+                <suite-file path="second_test.xml"/>
+                <suite-file path="retry_test.xml" />
+                <suite-file path="paraller_test.xml"/>
+    </suite-files>
+</suite>
+

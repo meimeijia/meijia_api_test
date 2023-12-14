@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Frist Test API Suite" parallel="methods" thread-count="2">
+    <test verbose="1" preserve-order="true" name="paraller1-test">
+        <classes>
+            <class name="com.meijiatest.testcase.paraller1"></class>
+            <class name="com.meijiatest.testcase.paraller2"></class>
+            <class name="com.meijiatest.testcase.paraller3"></class>
+        </classes>
+    </test>
+</suite>
